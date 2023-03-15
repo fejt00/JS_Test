@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TEST</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <div id="backdrop"></div>
+    <div class="modal" id="add-modal">
+      <div class="modal__content">
+        <label for="ime">Ime</label>
+        <input type="text" name="ime" id="ime" />
+
+        <label for="prezime">Prezime</label>
+        <input type="text" name="prezime" id="prezime" />
+
+        <label for="datRodj">Datum rođenja</label>
+        <input type="date" name="datRodj" id="datRodj">
+
+        <label for="idPozicije">ID Pozicije</label>
+        <select id="idPozicije2" name="idPozicije"></select>
+        <script>
+          const inp = new XMLHttpRequest();
+          const padajuci = document.getElementById('idPozicije2');
+          inp.open('GET', 'http://localhost:3000/type');
+          inp.responseType = 'json';
+          let minStep=0, maxStep=0;
+          inp.onload = function() {
+            const listOfPos = inp.response;
+            minStep = 1;
+            maxStep = listOfPos.length;
+
+            for(pos of listOfPos) {
+              let newOpt = document.createElement('option');
+              newOpt.setAttribute('value', pos.id);
+              newOpt.textContent = pos.type_name;
+              padajuci.appendChild(newOpt);
+            }    
+          };
+          inp.send();
+        </script>
+        
+        <label for="slikaZap">Slika (URL)</label>
+        <input type="text" name="slikaZap" id="slikaZap" />
+      </div>
+      <div class="modal__actions">
+        <button class="btn btn--passive">ODUSTANI</button>
+        <button class="btn btn--success">DODAJ</button>
+      </div>
+    </div>
+
+    <div class="header">
+        <img src="pics/LOGO-Oykos-Development-horizontalni-01.png" alt="OYKOS LOGO" id="pic">
+        <span>ZAPOSLENI</span>
+        <div class="header-right">
+          <a class="active" href="https://oykos.me/about">POČETNA</a>
+        </div>
+        <img src="pics/289-2892166_hec-edu-in-haryana-engineering-college-yamunanagar-blue.png" id="picHeader">
+      </div>
+
+    <template id="emp-card-single">
+        <li class="emp-item">
+          <p id="idEmp"></p>
+          <h2 id="name"></h2>
+          <h2 id="surname"></h2>
+          <h4 id="birth"></h4>
+          <p id="typeEmp"></p>
+          <img id="imgEmp">
+        </li>
+      </template>
+
+      <section id="available-emps">
+        <button id="addEmpBtn">DODAJ ZAPOSLENOG</button>
+        <ul class="employees"></ul>
+      </section>
+      
+
+</body>
+</html>

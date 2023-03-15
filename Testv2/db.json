@@ -1,0 +1,74 @@
+{
+  "employs": [
+    {
+      "id": 1,
+      "first_name": "Stefan",
+      "last_name": "Todorovic",
+      "date_of_birth": "01-02-1995",
+      "id_type_position": 1,
+      "image": "https://ca.slack-edge.com/TF5PZB8NA-U039RPU5LKE-9248a7f00e2c-512"
+    },
+    {
+      "id": 2,
+      "first_name": "Filip",
+      "last_name": "Andjelic",
+      "date_of_birth": "01-02-1994",
+      "id_type_position": 4,
+      "image": "https://media.licdn.com/dms/image/D4D03AQGc82GU-l4uEw/profile-displayphoto-shrink_800_800/0/1667032479650?e=2147483647&v=beta&t=KIDfDyoyh-udSpESzd0N-TT3CW6TNRz7iEMft22jXz8"
+    },
+    {
+      "id": 3,
+      "first_name": "Marta",
+      "last_name": "Andjelic",
+      "date_of_birth": "01-02-1995",
+      "id_type_position": 4,
+      "image": "https://media.licdn.com/dms/image/C4E03AQGEg9wNBrgFXQ/profile-displayphoto-shrink_800_800/0/1651843571163?e=2147483647&v=beta&t=kIzicZboPTrvqxSsWJUIcCi8bBBfzAWWPgZhg_O6BwQ"
+    },
+    {
+      "id": 4,
+      "first_name": "Milica",
+      "last_name": "Pejovic",
+      "date_of_birth": "01-02-1998",
+      "id_type_position": 2,
+      "image": "https://media.licdn.com/dms/image/D4D03AQHyaE1HE10RNQ/profile-displayphoto-shrink_800_800/0/1667141632458?e=2147483647&v=beta&t=sRBFKEA2EQe_ZAdA9mmcvFjiTOcpnI7aMPXoEL33rSo"
+    },
+    {
+      "id": 5,
+      "first_name": "Tijana",
+      "last_name": "Vrbnjak",
+      "date_of_birth": "01-02-1997",
+      "id_type_position": 3,
+      "image": "https://media.licdn.com/dms/image/D4D03AQFLji_MyPY9Kg/profile-displayphoto-shrink_800_800/0/1675808409830?e=2147483647&v=beta&t=zIt8Xfou1NbDYIOT9KGs1KQOmJxYoZ6NJeBZwfkCzhI"
+    },
+    {
+      "first_name": "Erica",
+      "last_name": "Macedo",
+      "date_of_birth": "1995-02-01",
+      "id_type_position": 5,
+      "image": "https://ca.slack-edge.com/TF5PZB8NA-U04EVSRCECE-be8773fd5a7d-512",
+      "id": 6
+    }
+  ],
+  "type": [
+    {
+      "id": 1,
+      "type_name": "Frontend Developer"
+    },
+    {
+      "id": 2,
+      "type_name": "Backend Developer"
+    },
+    {
+      "id": 3,
+      "type_name": "HR Manager"
+    },
+    {
+      "id": 4,
+      "type_name": "CEO"
+    },
+    {
+      "id": 5,
+      "type_name": "UX/UI Designer"
+    }
+  ]
+}
